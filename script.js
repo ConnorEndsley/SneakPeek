@@ -11,7 +11,7 @@ const resultGrid = document.getElementById("result-grid");
 
 async function loadMovies(searchTerm) {
   // dynamic api call
-  const URL = ` http://www.omdbapi.com/?s=${searchTerm}&page=1&apikey=1ea1ae09`;
+  const URL = ` https://www.omdbapi.com/?s=${searchTerm}&page=1&apikey=1ea1ae09`;
   // response
   const res = await fetch(`${URL}`);
   const data = await res.json();
